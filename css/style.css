@@ -9,8 +9,7 @@
 }
 
 body {
-    background-image: url(../imagenes/fondo.jpg);
-    background-size: cover;
+    background-color: #ecd0e2;
 }
 
 /*******************************************************************/
@@ -116,8 +115,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-bottom: 2px solid white;
-    background-color: #843646;
+    border-bottom: 2px solid #30354d;
+    background-color: whitesmoke;
 }
 
 /*Logo*/
@@ -138,18 +137,30 @@ header nav ul li {
     padding: 10px;
 }
 
-/*Color links*/
 header nav ul li a {
-    color: white;
+    color: #30354d;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: #30354d;
     margin: 10px;
     transition: 1s;
+}
+
+/*Bootstrap del menu Eras*/
+.dropdown-menu {
+    background-color:#30354d;
+}
+
+.dropdown-item{
+    color:  whitesmoke;
+}
+
+.dropdown-item:hover {
+    color: #30354d;
 }
 
 /*******************************************************************/
@@ -157,14 +168,23 @@ header nav ul li a:hover {
 /*Titulos*/
 .titulo {
     color: whitesmoke;
-    background-color: #c16471;
+    background-color: #30354d;
     text-align: center;
     font-size: 3rem;
     font-family: 'Rubik', sans-serif;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 5px;
 }
 
-/*Info*/
+/* Carrusel de Bootstrap */
+.eras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+}
+
+/*Biografia*/
 .grid-container {
     display: grid;
     justify-content: center;
@@ -179,7 +199,7 @@ header nav ul li a:hover {
 .grid-item-1 {
     grid-column: 1/4;
     background-color: rgba(99, 54, 121, 0.4);
-    color: #feeff0;
+    color: #30354d;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -188,11 +208,11 @@ header nav ul li a:hover {
 }
 
 .grid-item-1 img{
-    width: 100% !important;
+    width: 100%;
     height: auto; 
-    margin: 0px !important;
-    padding: 20px;
-    border-radius: 30px !important;
+    margin: 0px;
+    padding: 40px;
+    border-radius: 50px;
 }
 
 .grid-item-1 p{
@@ -200,33 +220,34 @@ header nav ul li a:hover {
     text-align: justify;
     font-family: 'Rubik', sans-serif;
     align-self: center;
-    margin: 30px;
+    padding: 40px;
     max-height: 400px;
     width: auto;
     overflow: hidden; 
 }
 
+/* 3 cards con info del tour */
 .grid-item-2, .grid-item-3, .grid-item-4 {
     background-color: rgba(99, 54, 121, 0.4);
-    color: #feeff0;
+    color: #30354d;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .grid-item-2 img, .grid-item-3 img, .grid-item-4 img{
     display: block;  
-    width: 100% !important;
+    width: 100%;
     height: auto;
-    margin: 0px !important;
-    padding: 20px;
-    border-radius: 30px !important;
+    margin: 0px;
+    padding: 40px;
+    border-radius: 50px;
 }
 
 .grid-item-2 p, .grid-item-3 p, .grid-item-4 p{
     text-align: justify;
     font-family: 'Rubik', sans-serif;
     align-self: center;
-    margin: 20px;
+    margin: 40px;
 }
 
 /********************************************************************/
@@ -235,18 +256,13 @@ header nav ul li a:hover {
 
 /*Spotify*/
 .spotify iframe {
-    width: 270px;
-    height: 405px;
+    width: 500px;
+    height: 400px;
     background-color: transparent;
+    padding: 20px;
 }
 
-/*Video*/
-.video iframe {
-    width: 270px;
-    height: 405px;
-}
-
-/*Presentacion Eras*/
+/*Contenedor de las Eras*/
 .grid-container-eras {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -255,9 +271,10 @@ header nav ul li a:hover {
     margin: 70px;
 }
 
+/* Eras por separado */
 .grid-container-eras div{
     background-color: rgba(99, 54, 121, 0.4);
-    color: #feeff0;
+    color: #30354d;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
     display: flex;
@@ -286,82 +303,91 @@ header nav ul li a:hover {
 }
 
 .grid-container-eras div img {
-    width: 320px;
+    min-width: 500px;
     height: 405px;
     border-radius: 40px;
     padding: 20px;
 }
 
 #taylorswift:hover{
-    background-color: rgba(64, 199, 132, 0.527);
+    background-color: rgba(30, 148, 89, 0.527);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #fearless:hover{
-    background-color: rgba(235, 198, 33, 0.37);
+    background-color: rgba(129, 107, 9, 0.37);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #speaknow:hover{
     background-color: rgba(100, 23, 100, 0.774);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #red:hover{
     background-color: rgba(87, 4, 4, 0.822);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #nineteen:hover{
     background-color: rgba(23, 99, 134, 0.651);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #reputation:hover{
     background-color: rgba(0, 0, 0, 0.884);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #lover:hover{
     background-color: rgba(168, 30, 122, 0.692);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #folklore:hover{
     background-color: rgba(76, 78, 78, 0.651);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #evermore:hover{
     background-color: rgba(63, 22, 9, 0.733);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #midnights:hover{
     background-color: rgba(8, 22, 104, 0.753);
     transition: 1s;
+    color: whitesmoke;
 }
 
 #ttpd:hover{
     background-color: rgba(110, 90, 78, 0.733);
     transition: 1s;
+    color: whitesmoke;
 }
-
 
 /********************************************************************/
 
 /*Tabla de fechas*/
 .tour {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(15, 60px);
     margin: 70px;
-    background-color: rgba(99, 54, 121, 0.4);
-    color: #faf0f3;
+    color: #30354d;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
+    border-radius: 15px;
 }
 
 .encabezados{
@@ -370,8 +396,10 @@ header nav ul li a:hover {
     align-items: center;
     grid-column: 1/4;
     padding: 15px;
-    background-color: #c16471;
+    background-color: #30354d;
     text-align: justify;
+    color: whitesmoke;
+    border-radius: 15px;
 }
 
 .fecha{
@@ -379,13 +407,16 @@ header nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     grid-column: 1/4;
-    border-bottom: 1px solid white;
+    background-color: rgba(99, 54, 121, 0.4);
+    border: 1px solid white;
     padding-left: 230px;
     padding-right: 290px;
+    border-radius: 20px;
 }
 
 .fecha:hover{
-    background-color:#843646;
+    background-color:#30354d;
+    color: whitesmoke;
     font-size: 1.7rem;
     transition: 1s;
 }
@@ -401,17 +432,19 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
-    color: rgb(0, 0, 0);
+    color: whitesmoke;
     margin: 70px;
 }
 
 .item div{
-    background-color: #843646;
-    border-radius: 20px;
-    padding: 15px;
+    background-color: #30354d;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 5px;
     margin: 0px 100px 100px 100px;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
 }
+
 /*Imagenes del merch*/
 .item img {
     width: 100%;
@@ -436,7 +469,7 @@ header nav ul li a:hover {
 
 .carrito{
     position: fixed;
-    background-color: rgb(177, 90, 141);
+    background-color: #30354d;
     border-radius: 70px;
     padding: 10px;
     bottom: 10px;
@@ -481,8 +514,10 @@ header nav ul li a:hover {
 footer {
     display: flex;
     justify-content: center;
-    background-color: #843646;
-    color: white;
+    background-color: whitesmoke;
+    color: #30354d;
     font-family: 'rubik', Arial, Helvetica, sans-serif;
-    border-top: 2px solid white;
+    border-top: 2px solid #30354d;
+    font-weight: bolder;
+    padding-top: 10px;
 }
