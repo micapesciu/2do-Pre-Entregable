@@ -150,7 +150,7 @@ header nav ul li a:hover {
 
 /*Spotify*/
 .spotify iframe {
-    width: 500px;
+    width: auto;
     height: 400px;
     background-color: transparent;
     padding: 20px;
@@ -197,7 +197,7 @@ header nav ul li a:hover {
 }
 
 .grid-container-eras div img {
-    min-width: 500px;
+    width: auto;
     height: 405px;
     border-radius: 40px;
     padding: 20px;
@@ -418,38 +418,43 @@ footer {
 
 /*********************************************************************/
 
-/*Responsive Mobile - INDEX*/
+/*Responsive Mobile*/
 
 @media only screen and (max-width: 425px) {
 
-    /* Header */
-        header img{
-            display: block;  
-            width: 70%;
-            height: auto;
-        }
-    
-        header{
-            flex-direction: column;
-            padding-bottom: 0px;
-        }
-        
+/*General*/
 
-        header nav ul{
-            margin: 0px;
-            padding: 0px;
-        }
+    header img{
+        display: block;  
+        width: 70%;
+        height: auto;
+    }
+
+    header{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    header nav ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header nav ul li a{
+        font-size: 4vw;
+    }
+
+    .nav-item a {
+        font-size: 4vw;
+        padding-top: 9px;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
     
-        header nav ul li a{
-            font-size: 4vw;
-        }
-    
-        .nav-item a {
-            font-size: 4vw;
-            padding-top: 9px;
-        }
-    
-    /* Carrusel */
+/*INDEX*/
+/* Carrusel */
         .eras{
             margin: 30px;
         }
@@ -484,80 +489,144 @@ footer {
             padding: 0px;
         }
     
-        footer{
-            font-size: 0.6rem;
-        }
-    }
-    
-    /*************************************************************************************/
-    /*Responsive Tablet - INDEX*/
+/*ERAS*/
 
-    @media only screen and (min-width: 426px) and (max-width: 1024px) {
-        /* Header */
-        header img{
-            display: block;  
-            width: 30%;
-            height: auto;
-        }
-    
-        header{
-            flex-direction: column;
-            padding-bottom: 0px;
-        }
-        
-        header nav ul{
-            margin: 0px;
-            padding: 0px;
-        }
-    
-        header nav ul li a{
-            font-size: 15px;
-        }
-    
-        .nav-item a {
-            font-size: 15px;
-            padding-top: 9px;
-        }
-    
-    /* Carrusel */
-        .eras{
-            margin: 50px;
-        }
-    
-        .grid-container {
-            display: block; 
-            margin: 50px;
-        }
-    
-        .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
-            display: block;
-            width: 100%; 
-            height: auto;
-            margin-bottom: 25px;
-        }
-    
-        .grid-item-1 img, .grid-item-2 img, .grid-item-3 img, .grid-item-4 img  {
-            display: block;  
-            width: 100%;
-            height: auto; 
-            margin: 0px;
-            padding: 20px;
-            border-radius: 30px;
-        }
-    
-        .grid-item-1 p, .grid-item-2 p, .grid-item-3 p, .grid-item-4 p{
-            font-size: 1rem;
-            text-align: justify;
-            font-family: 'Rubik', sans-serif;
-            align-self: center;
-            margin: 0px 30px 30px 30px;
-            padding: 0px;
-        }
-    
-        footer{
-            font-size: 0.6rem;
-        }
+    .grid-container-eras{
+        display: block; 
+        margin: 30px;
+    }
+
+    .grid-item-era {
+        flex-direction: column; 
+        margin-bottom: 20px;
     }
     
-    /*******************************************************************/
+    .grid-container-eras div img{
+        display: block;  
+        width: 90% ; 
+        height: auto;
+        padding: 20px;
+    }
+
+    .grid-item-era p{
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        padding-top: 50px;
+    }
+
+    .spotify iframe {
+        display: block; 
+        width: 95%; 
+        margin: auto; 
+    }
+
+}
+
+/*************************************************************************************/
+/*Responsive Tablet*/
+
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+
+/*General*/
+
+    header img{
+        display: block;  
+        width: 30%;
+        height: auto;
+    }
     
+    header{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+        
+    header nav ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    header nav ul li a{
+        font-size: 15px;
+    }
+    
+    .nav-item a {
+        font-size: 15px;
+        padding-top: 9px;
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+    
+    /*INDEX*/
+    /* Carrusel */
+
+    .eras{
+        margin: 50px;
+    }
+    
+    .grid-container {
+        display: block; 
+        margin: 50px;
+    }
+    
+    .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
+        display: block;
+        width: 100%; 
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+    .grid-item-1 img, .grid-item-2 img, .grid-item-3 img, .grid-item-4 img  {
+        display: block;  
+        width: 100%;
+        height: auto; 
+        margin: 0px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .grid-item-1 p, .grid-item-2 p, .grid-item-3 p, .grid-item-4 p{
+        font-size: 1rem;
+        text-align: justify;
+        font-family: 'Rubik', sans-serif;
+        align-self: center;
+        margin: 0px 30px 30px 30px;
+        padding: 0px;
+    }
+    
+}
+
+/*Responsive tablet para eras.html*/
+@media only screen and (min-width: 426px) and (max-width: 1303px) {
+/*ERAS*/
+.grid-container-eras{
+    display: block; 
+    margin: 30px;
+}
+
+.grid-item-era {
+    flex-direction: column; 
+    margin-bottom: 20px;
+}
+
+.grid-container-eras div img{
+    display: block;  
+    width: 90%; 
+    height: auto;
+    padding: 20px;
+}
+
+.grid-item-era p{
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 50px;
+}
+
+.spotify iframe {
+    position: relative;
+    padding-right: 125px;
+    width: 125%;
+    height: 700px;
+}
+}
