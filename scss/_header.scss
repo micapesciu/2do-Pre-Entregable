@@ -1,0 +1,52 @@
+// Header
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #30354d;
+    background-color: whitesmoke;
+
+    img{
+        width: 280px;
+        height: 80px;
+    }
+
+    nav{
+
+        ul{
+            font-family: 'rubik', Arial, Helvetica, sans-serif;
+            list-style-type: none;
+            display: flex;
+
+            li{
+                padding: 10px;
+
+                a{
+                    color: #30354d;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #30354d;
+                        margin: 10px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    background-color:#30354d;
+}
+
+.dropdown-item{
+    color:  whitesmoke;
+}
+
+.dropdown-item:hover {
+    color: #30354d;
+}
