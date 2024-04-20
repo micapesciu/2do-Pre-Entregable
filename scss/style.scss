@@ -21,20 +21,26 @@ header {
     padding: 15px;
     border-bottom: 2px solid #30354d;
     background-color: whitesmoke;
+
     img{
         width: 280px;
         height: 80px;
     }
+
     nav{
+
         ul{
             font-family: 'rubik', Arial, Helvetica, sans-serif;
             list-style-type: none;
             display: flex;
+
             li{
                 padding: 10px;
+
                 a{
                     color: #30354d;
                     text-decoration: none;
+                    
                     &:hover{
                         text-decoration: none;
                         font-weight: bold;
@@ -117,6 +123,7 @@ footer {
     justify-content: space-between;
     overflow: hidden;
     text-overflow: ellipsis;
+
     p{
         font-size: 1rem;
         text-align: justify;
@@ -127,6 +134,7 @@ footer {
         width: auto;
         overflow: hidden; 
     }
+
     img{
         display: block;  
         width: 100%;
@@ -144,6 +152,7 @@ footer {
     color: #30354d;
     border-radius: 10px;
     overflow: hidden;
+
     img{
         display: block;  
         width: 100%;
@@ -152,6 +161,7 @@ footer {
         padding: 40px;
         border-radius: 50px;
     }
+
     p{
         text-align: justify;
         font-family: 'Rubik', sans-serif;
@@ -164,6 +174,7 @@ footer {
 // Pagina ERAS
 
 .spotify{
+
     iframe{
         width: auto;
         height: 400px;
@@ -185,6 +196,7 @@ footer {
 // Eras por separado
 
 .grid-container-eras{
+
     .grid-item-era{
         background-color: rgba(99, 54, 121, 0.4);
         color: #30354d;
@@ -195,12 +207,14 @@ footer {
         align-items: center;
         border-radius: 10px;
         overflow: hidden;
+
         .titulo-era{
             position: absolute;
             font-size: 1.5rem;
             align-self: flex-start;
             padding: 20px;
         }
+
         p {
             font-size: 0.9rem;
             text-align: justify;
@@ -211,6 +225,7 @@ footer {
             max-height: 340px;
             overflow: hidden; 
         }
+
         img {
             width: auto;
             height: 405px;
@@ -221,6 +236,7 @@ footer {
 }
 
 #taylorswift{
+
     &:hover{
     background-color: rgba(30, 148, 89, 0.527);
     transition: 1s;
@@ -229,6 +245,7 @@ footer {
 }
 
 #fearless{
+
     &:hover{
     background-color: rgba(129, 107, 9, 0.37);
     transition: 1s;
@@ -237,6 +254,7 @@ footer {
 }
 
 #speaknow{
+
     &:hover{
     background-color: rgba(100, 23, 100, 0.774);
     transition: 1s;
@@ -245,6 +263,7 @@ footer {
 }
 
 #red{
+
     &:hover{
     background-color: rgba(87, 4, 4, 0.822);
     transition: 1s;
@@ -253,6 +272,7 @@ footer {
 }
 
 #nineteen{
+
     &:hover{
     background-color: rgba(23, 99, 134, 0.651);
     transition: 1s;
@@ -261,6 +281,7 @@ footer {
 }
 
 #reputation{
+
     &:hover{
     background-color: rgba(0, 0, 0, 0.884);
     transition: 1s;
@@ -269,6 +290,7 @@ footer {
 }
 
 #lover{
+
     &:hover{
     background-color: rgba(168, 30, 122, 0.692);
     transition: 1s;
@@ -277,6 +299,7 @@ footer {
 }
 
 #folklore{
+
     &:hover{
     background-color: rgba(76, 78, 78, 0.651);
     transition: 1s;
@@ -285,6 +308,7 @@ footer {
 }
 
 #evermore{
+
     &:hover{
     background-color: rgba(63, 22, 9, 0.733);
     transition: 1s;
@@ -293,6 +317,7 @@ footer {
 }
 
 #midnights{
+
     &:hover{
     background-color: rgba(8, 22, 104, 0.753);
     transition: 1s;
@@ -301,6 +326,7 @@ footer {
 }
 
 #ttpd{
+
     &:hover{
     background-color: rgba(110, 90, 78, 0.733);
     transition: 1s;
@@ -320,6 +346,7 @@ footer {
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
     border-radius: 15px;
+
     .encabezados{
         display: flex;
         justify-content: space-around;
@@ -331,6 +358,7 @@ footer {
         color: whitesmoke;
         border-radius: 15px;
     }
+
     .fecha{
         display: flex;
         justify-content: space-between;
@@ -341,6 +369,7 @@ footer {
         padding-left: 230px;
         padding-right: 290px;
         border-radius: 20px;
+
         &:hover{
             background-color:#30354d;
             color: whitesmoke;
@@ -361,7 +390,9 @@ footer {
     font-family: 'Rubik', sans-serif;
     color: whitesmoke;
     margin: 70px;
+
     .item{
+
         div{
             background-color: #30354d;
             color: whitesmoke;
@@ -369,6 +400,7 @@ footer {
             padding: 5px;
             margin: 0px 100px 100px 100px;
             box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
             &:hover{
                 background-color: black;
                 color: white;
@@ -377,10 +409,12 @@ footer {
                 margin: 0px 100px 100px 100px;
             }
         }
+
         img {
             width: 100%;
             height: auto;
         }
+
         &:hover{
             color: black;
             font-size: 2rem;
@@ -398,6 +432,7 @@ footer {
     padding: 10px;
     bottom: 10px;
     right: 10px;
+
     &:active{
         background-color: rgb(53, 28, 65);
     }
@@ -413,10 +448,12 @@ footer {
     margin: 70px;
     justify-items: center; 
     align-items: center; 
+
     img {
         width: 550px;
         height: 650px;
         border-radius: 20px;
+
         &:active{
             width: 800px;
             height: 830px;
@@ -440,21 +477,27 @@ footer {
     header{
         flex-direction: column;
         padding-bottom: 0px;
+
         img{
             display: block;  
             width: 70%;
             height: auto;
         }
+
         nav{
+
             ul{
                 margin: 0px;
                 padding: 0px;
+
                 li{
+
                     a{
                         font-size: 4vw;
                     }
                 }
                 .nav-item{
+
                     a{
                         font-size: 4vw;
                         padding-top: 9px;
@@ -479,11 +522,13 @@ footer {
     .grid-container {
         display: block; 
         margin: 30px;
+
         .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
             display: block;
             width: 100%; 
             height: auto;
             margin-bottom: 25px;
+
             img{
                 display: block;  
                 width: 100%;
@@ -492,6 +537,7 @@ footer {
                 padding: 20px;
                 border-radius: 30px;
             }
+
             p{
                 font-size: 1rem;
                 text-align: justify;
@@ -508,21 +554,26 @@ footer {
     .grid-container-eras{
         display: block; 
         margin: 30px;
+
         .grid-item-era {
             flex-direction: column; 
             margin-bottom: 20px;
+
             img{
                 display: block;  
                 width: 90% ; 
                 height: auto;
                 padding: 20px;
             }
+
             p{
                 font-size: 1rem;
                 font-family: 'Rubik', sans-serif;
                 padding-top: 50px;
             }
+
             .spotify{
+
                 iframe {
                 display: block; 
                 width: 95%; 
@@ -537,23 +588,31 @@ footer {
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
 
     header{
+
         flex-direction: column;
         padding-bottom: 0px;
+
         img{
             display: block;  
             width: 30%;
             height: auto;
         }
+
         nav{
+
             ul{
                 margin: 0px;
                 padding: 0px;
+
                 li{
+
                     a{
                         font-size: 15px;
                     }
                 }
+
                 .nav-item{
+
                     a{
                         font-size: 15px;
                         padding-top: 9px;
@@ -562,6 +621,7 @@ footer {
             }
         }
     }
+
     footer{
         font-size: 0.6rem;
     }
@@ -574,11 +634,13 @@ footer {
     .grid-container {
         display: block; 
         margin: 50px;
+
         .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
             display: block;
             width: 100%; 
             height: auto;
             margin-bottom: 25px;
+
             img{
                 display: block;  
                 width: 100%;
@@ -587,6 +649,7 @@ footer {
                 padding: 20px;
                 border-radius: 30px;
             }
+
             p{
                 font-size: 1rem;
                 text-align: justify;
@@ -606,21 +669,26 @@ footer {
     .grid-container-eras{
         display: block; 
         margin: 30px;
+
         .grid-item-era {
             flex-direction: column; 
             margin-bottom: 20px;
+
             img{
                 display: block;  
                 width: 90%; 
                 height: auto;
                 padding: 20px;
             }
+
             p{
                 font-size: 1rem;
                 font-family: 'Rubik', sans-serif;
                 padding-top: 50px;
             }
+
             .spotify{
+                
                 iframe {
                 position: relative;
                 padding-right: 125px;
