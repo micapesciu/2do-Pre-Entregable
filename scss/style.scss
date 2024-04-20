@@ -1,0 +1,633 @@
+// Header
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../ProyectoFinal/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #ecd0e2;
+}
+
+// Header
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #30354d;
+    background-color: whitesmoke;
+    img{
+        width: 280px;
+        height: 80px;
+    }
+    nav{
+        ul{
+            font-family: 'rubik', Arial, Helvetica, sans-serif;
+            list-style-type: none;
+            display: flex;
+            li{
+                padding: 10px;
+                a{
+                    color: #30354d;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #30354d;
+                        margin: 10px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    background-color:#30354d;
+}
+
+.dropdown-item{
+    color:  whitesmoke;
+}
+
+.dropdown-item:hover {
+    color: #30354d;
+}
+
+// Footer
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: #30354d;
+    font-family: 'rubik', Arial, Helvetica, sans-serif;
+    border-top: 2px solid #30354d;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+// Titulos
+
+.titulo {
+    color: whitesmoke;
+    background-color: #30354d;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    border-bottom: 2px solid white;
+    padding-top: 5px;
+}
+
+// Carrusel
+
+.eras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+}
+
+// Cards
+
+// Primer card - Biografia
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 70px;
+    margin: 70px;
+    overflow: hidden;
+}
+
+.grid-item-1 {
+    grid-column: 1/4;
+    background-color: rgba(99, 54, 121, 0.4);
+    color: #30354d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        font-family: 'Rubik', sans-serif;
+        align-self: center;
+        padding: 40px;
+        max-height: 400px;
+        width: auto;
+        overflow: hidden; 
+    }
+    img{
+        display: block;  
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+}
+
+// Segunda, tercera y cuarta card
+
+.grid-item-2, .grid-item-3, .grid-item-4 {
+    background-color: rgba(99, 54, 121, 0.4);
+    color: #30354d;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+        display: block;  
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+    p{
+        text-align: justify;
+        font-family: 'Rubik', sans-serif;
+        align-self: center;
+        margin: 40px;
+    }
+    
+}
+
+// Pagina ERAS
+
+.spotify{
+    iframe{
+        width: auto;
+        height: 400px;
+        background-color: transparent;
+        padding: 20px;
+    }
+}
+
+// Contenedor de las eras
+
+.grid-container-eras {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+    grid-row-gap: 30px;
+    margin: 70px;
+}
+
+// Eras por separado
+
+.grid-container-eras{
+    .grid-item-era{
+        background-color: rgba(99, 54, 121, 0.4);
+        color: #30354d;
+        font-size: 1.5rem;
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        .titulo-era{
+            position: absolute;
+            font-size: 1.5rem;
+            align-self: flex-start;
+            padding: 20px;
+        }
+        p {
+            font-size: 0.9rem;
+            text-align: justify;
+            margin: 30px;
+            padding-top: 30px;
+            font-family: 'Rubik', sans-serif;
+            width: auto;
+            max-height: 340px;
+            overflow: hidden; 
+        }
+        img {
+            width: auto;
+            height: 405px;
+            border-radius: 40px;
+            padding: 20px;
+        }
+    }
+}
+
+#taylorswift{
+    &:hover{
+    background-color: rgba(30, 148, 89, 0.527);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#fearless{
+    &:hover{
+    background-color: rgba(129, 107, 9, 0.37);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#speaknow{
+    &:hover{
+    background-color: rgba(100, 23, 100, 0.774);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#red{
+    &:hover{
+    background-color: rgba(87, 4, 4, 0.822);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#nineteen{
+    &:hover{
+    background-color: rgba(23, 99, 134, 0.651);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#reputation{
+    &:hover{
+    background-color: rgba(0, 0, 0, 0.884);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#lover{
+    &:hover{
+    background-color: rgba(168, 30, 122, 0.692);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#folklore{
+    &:hover{
+    background-color: rgba(76, 78, 78, 0.651);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#evermore{
+    &:hover{
+    background-color: rgba(63, 22, 9, 0.733);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#midnights{
+    &:hover{
+    background-color: rgba(8, 22, 104, 0.753);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+#ttpd{
+    &:hover{
+    background-color: rgba(110, 90, 78, 0.733);
+    transition: 1s;
+    color: whitesmoke;
+    }
+}
+
+// Tabla de fechas
+
+.tour {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, 60px);
+    margin: 70px;
+    color: #30354d;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 15px;
+    .encabezados{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column: 1/4;
+        padding: 15px;
+        background-color: #30354d;
+        text-align: justify;
+        color: whitesmoke;
+        border-radius: 15px;
+    }
+    .fecha{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 1/4;
+        background-color: rgba(99, 54, 121, 0.4);
+        border: 1px solid white;
+        padding-left: 230px;
+        padding-right: 290px;
+        border-radius: 20px;
+        &:hover{
+            background-color:#30354d;
+            color: whitesmoke;
+            font-size: 1.7rem;
+            transition: 1s;
+        }
+    }
+}
+
+// Merch
+
+.merch {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: whitesmoke;
+    margin: 70px;
+    .item{
+        div{
+            background-color: #30354d;
+            color: whitesmoke;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 0px 100px 100px 100px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+            &:hover{
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                padding: 15px;
+                margin: 0px 100px 100px 100px;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &:hover{
+            color: black;
+            font-size: 2rem;
+            background-color: rgba(128, 94, 163, 0.534);
+            transition: 1s;
+            border-radius: 20px;
+        }
+    }
+}
+
+.carrito{
+    position: fixed;
+    background-color: #30354d;
+    border-radius: 70px;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+    &:active{
+        background-color: rgb(53, 28, 65);
+    }
+}
+
+// Galeria de Fotos
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
+    column-gap: 10px;
+    margin: 70px;
+    justify-items: center; 
+    align-items: center; 
+    img {
+        width: 550px;
+        height: 650px;
+        border-radius: 20px;
+        &:active{
+            width: 800px;
+            height: 830px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            transition: 1s;
+            box-shadow: 100px 100px 20px rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+// Responsive
+
+// Responsive Mobile
+@media only screen and (max-width: 425px) {
+
+    // General
+    header{
+        flex-direction: column;
+        padding-bottom: 0px;
+        img{
+            display: block;  
+            width: 70%;
+            height: auto;
+        }
+        nav{
+            ul{
+                margin: 0px;
+                padding: 0px;
+                li{
+                    a{
+                        font-size: 4vw;
+                    }
+                }
+                .nav-item{
+                    a{
+                        font-size: 4vw;
+                        padding-top: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+
+    // Index.html
+
+    // Carrusel
+    .eras{
+        margin: 30px;
+    }
+
+    // Cards
+    .grid-container {
+        display: block; 
+        margin: 30px;
+        .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-bottom: 25px;
+            img{
+                display: block;  
+                width: 100%;
+                height: auto; 
+                margin: 0px;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                font-family: 'Rubik', sans-serif;
+                align-self: center;
+                margin: 0px 30px 30px 30px;
+                padding: 0px; 
+            }
+        }
+    }
+
+    // Eras.html
+
+    .grid-container-eras{
+        display: block; 
+        margin: 30px;
+        .grid-item-era {
+            flex-direction: column; 
+            margin-bottom: 20px;
+            img{
+                display: block;  
+                width: 90% ; 
+                height: auto;
+                padding: 20px;
+            }
+            p{
+                font-size: 1rem;
+                font-family: 'Rubik', sans-serif;
+                padding-top: 50px;
+            }
+            .spotify{
+                iframe {
+                display: block; 
+                width: 95%; 
+                margin: auto; 
+                }
+            }
+        }
+    }
+}
+
+// Responsive Tablet
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+
+    header{
+        flex-direction: column;
+        padding-bottom: 0px;
+        img{
+            display: block;  
+            width: 30%;
+            height: auto;
+        }
+        nav{
+            ul{
+                margin: 0px;
+                padding: 0px;
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+                .nav-item{
+                    a{
+                        font-size: 15px;
+                        padding-top: 9px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        font-size: 0.6rem;
+    }
+
+    //Index
+    .eras{
+        margin: 50px;
+    }
+
+    .grid-container {
+        display: block; 
+        margin: 50px;
+        .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-bottom: 25px;
+            img{
+                display: block;  
+                width: 100%;
+                height: auto; 
+                margin: 0px;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                font-family: 'Rubik', sans-serif;
+                align-self: center;
+                margin: 0px 30px 30px 30px;
+                padding: 0px;
+            }
+        }
+    }
+}
+
+// Responsive tablet para eras.html 
+
+@media only screen and (min-width: 426px) and (max-width: 1303px) {
+
+    .grid-container-eras{
+        display: block; 
+        margin: 30px;
+        .grid-item-era {
+            flex-direction: column; 
+            margin-bottom: 20px;
+            img{
+                display: block;  
+                width: 90%; 
+                height: auto;
+                padding: 20px;
+            }
+            p{
+                font-size: 1rem;
+                font-family: 'Rubik', sans-serif;
+                padding-top: 50px;
+            }
+            .spotify{
+                iframe {
+                position: relative;
+                padding-right: 125px;
+                width: 125%;
+                height: 700px;
+                }
+            }
+        }
+    }
+}
