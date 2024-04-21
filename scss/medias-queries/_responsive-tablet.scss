@@ -55,21 +55,14 @@
             margin-bottom: 25px;
 
             img{
-                display: block;  
-                width: 100%;
-                height: auto; 
-                margin: 0px;
+                @include imagen-card();
                 padding: 20px;
                 border-radius: 30px;
             }
 
             p{
-                font-size: 1rem;
-                text-align: justify;
-                font-family: 'Rubik', sans-serif;
-                align-self: center;
+                @include texto-parrafo();
                 margin: 0px 30px 30px 30px;
-                padding: 0px;
             }
         }
     }

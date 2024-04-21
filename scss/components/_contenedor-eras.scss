@@ -1,25 +1,19 @@
 // Contenedor de las eras
 .grid-container-eras {
-    display: grid;
+    @include contenedores();
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(11, auto);
     grid-row-gap: 30px;
-    margin: 70px;
 }
 
 // Eras por separado
 .grid-container-eras{
 
     .grid-item-era{
-        background-color: $violeta;
-        color: $azul;
-        font-size: 1.5rem;
-        font-family: 'Rubik', sans-serif;
+        @include estilo-card();
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 10px;
-        overflow: hidden;
 
         .titulo-era{
             position: absolute;
@@ -29,20 +23,16 @@
         }
 
         p {
-            font-size: 0.9rem;
-            text-align: justify;
+            @include texto-parrafo();
             margin: 30px;
             padding-top: 30px;
-            font-family: 'Rubik', sans-serif;
-            width: auto;
             max-height: 340px;
-            overflow: hidden; 
         }
 
         img {
             width: auto;
             height: 405px;
-            border-radius: 40px;
+            border-radius: 30px;
             padding: 20px;
         }
     }

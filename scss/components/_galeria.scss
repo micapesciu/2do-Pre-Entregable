@@ -1,10 +1,9 @@
 // Galeria de fotos
 .fotos {
-    display: grid;
+    @include contenedores();
     grid-template-columns: repeat(3, 1fr);
     row-gap: 60px;
     column-gap: 10px;
-    margin: 70px;
     justify-items: center; 
     align-items: center; 
 

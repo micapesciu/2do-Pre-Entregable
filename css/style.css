@@ -24,7 +24,7 @@ header img {
   height: 80px;
 }
 header nav ul {
-  font-family: "rubik", Arial, Helvetica, sans-serif;
+  font-family: "rubik", "Gill Sans", Calibri;
   list-style-type: none;
   display: flex;
 }
@@ -60,7 +60,7 @@ header nav ul li a:hover {
   background-color: #30354d;
   text-align: center;
   font-size: 3rem;
-  font-family: "Rubik", sans-serif;
+  font-family: "rubik", "Gill Sans", Calibri;
   border-bottom: 2px solid white;
   padding-top: 5px;
 }
@@ -74,34 +74,36 @@ header nav ul li a:hover {
 
 .grid-container {
   display: grid;
+  margin: 70px;
+  font-family: "rubik", "Gill Sans", Calibri;
+  overflow: hidden;
+  font-size: 1rem;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 20px;
   grid-row-gap: 70px;
-  margin: 70px;
-  overflow: hidden;
 }
 
 .grid-item-1 {
-  grid-column: 1/4;
   background-color: rgba(99, 54, 121, 0.4);
   color: #30354d;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
   overflow: hidden;
   text-overflow: ellipsis;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
 }
 .grid-item-1 p {
+  font-family: "rubik", "Gill Sans", Calibri;
   font-size: 1rem;
   text-align: justify;
-  font-family: "rubik", "Gill Sans", Calibri;
-  align-self: center;
-  padding: 40px;
-  max-height: 400px;
   width: auto;
   overflow: hidden;
+  margin: 40px;
+  align-self: center;
+  max-height: 400px;
 }
 .grid-item-1 img {
   display: block;
@@ -117,6 +119,7 @@ header nav ul li a:hover {
   color: #30354d;
   border-radius: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .grid-item-2 img, .grid-item-3 img, .grid-item-4 img {
   display: block;
@@ -127,30 +130,35 @@ header nav ul li a:hover {
   border-radius: 50px;
 }
 .grid-item-2 p, .grid-item-3 p, .grid-item-4 p {
-  text-align: justify;
   font-family: "rubik", "Gill Sans", Calibri;
-  align-self: center;
+  font-size: 1rem;
+  text-align: justify;
+  width: auto;
+  overflow: hidden;
   margin: 40px;
+  align-self: center;
 }
 
 .grid-container-eras {
   display: grid;
+  margin: 70px;
+  font-family: "rubik", "Gill Sans", Calibri;
+  overflow: hidden;
+  font-size: 1rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(11, auto);
   grid-row-gap: 30px;
-  margin: 70px;
 }
 
 .grid-container-eras .grid-item-era {
   background-color: rgba(99, 54, 121, 0.4);
   color: #30354d;
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
 }
 .grid-container-eras .grid-item-era .titulo-era {
   position: absolute;
@@ -159,19 +167,21 @@ header nav ul li a:hover {
   padding: 20px;
 }
 .grid-container-eras .grid-item-era p {
-  font-size: 0.9rem;
+  font-family: "rubik", "Gill Sans", Calibri;
+  font-size: 1rem;
   text-align: justify;
+  width: auto;
+  overflow: hidden;
+  margin: 40px;
+  align-self: center;
   margin: 30px;
   padding-top: 30px;
-  font-family: "Rubik", sans-serif;
-  width: auto;
   max-height: 340px;
-  overflow: hidden;
 }
 .grid-container-eras .grid-item-era img {
   width: auto;
   height: 405px;
-  border-radius: 40px;
+  border-radius: 30px;
   padding: 20px;
 }
 
@@ -223,14 +233,16 @@ header nav ul li a:hover {
 
 .tour {
   display: grid;
+  margin: 70px;
+  font-family: "rubik", "Gill Sans", Calibri;
+  overflow: hidden;
+  font-size: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(15, 60px);
-  margin: 70px;
   color: #30354d;
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
   border-radius: 15px;
+  font-size: 1.3rem;
 }
 .tour .encabezados {
   display: flex;
@@ -257,19 +269,20 @@ header nav ul li a:hover {
 .tour .fecha:hover {
   background-color: #30354d;
   color: whitesmoke;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   transition: 1s;
 }
 
 .merch {
   display: grid;
+  margin: 70px;
+  font-family: "rubik", "Gill Sans", Calibri;
+  overflow: hidden;
+  font-size: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 10px;
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
   color: whitesmoke;
-  margin: 70px;
 }
 .merch .item div {
   background-color: #30354d;
@@ -281,7 +294,7 @@ header nav ul li a:hover {
 }
 .merch .item div:hover {
   background-color: black;
-  color: white;
+  color: whitesmoke;
   border-radius: 20px;
   padding: 15px;
   margin: 0px 100px 100px 100px;
@@ -292,7 +305,7 @@ header nav ul li a:hover {
 }
 .merch .item:hover {
   color: black;
-  font-size: 2rem;
+  font-size: 1.2rem;
   background-color: rgba(99, 54, 121, 0.4);
   transition: 1s;
   border-radius: 20px;
@@ -312,10 +325,13 @@ header nav ul li a:hover {
 
 .fotos {
   display: grid;
+  margin: 70px;
+  font-family: "rubik", "Gill Sans", Calibri;
+  overflow: hidden;
+  font-size: 1rem;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 60px;
   column-gap: 10px;
-  margin: 70px;
   justify-items: center;
   align-items: center;
 }
@@ -348,7 +364,7 @@ footer {
   justify-content: center;
   background-color: whitesmoke;
   color: #30354d;
-  font-family: "rubik", Arial, Helvetica, sans-serif;
+  font-family: "rubik", "Gill Sans", Calibri;
   border-top: 2px solid #30354d;
   font-weight: bolder;
   padding-top: 10px;
@@ -396,16 +412,20 @@ footer {
     width: 100%;
     height: auto;
     margin: 0px;
+    padding: 40px;
+    border-radius: 50px;
     padding: 20px;
     border-radius: 30px;
   }
   .grid-container .grid-item-1 p, .grid-container .grid-item-2 p, .grid-container .grid-item-3 p, .grid-container .grid-item-4 p {
+    font-family: "rubik", "Gill Sans", Calibri;
     font-size: 1rem;
     text-align: justify;
-    font-family: "Rubik", sans-serif;
+    width: auto;
+    overflow: hidden;
+    margin: 40px;
     align-self: center;
-    margin: 0px 30px 30px 30px;
-    padding: 0px;
+    margin-top: 0px;
   }
   .grid-container-eras {
     display: block;
@@ -422,8 +442,13 @@ footer {
     padding: 20px;
   }
   .grid-container-eras .grid-item-era p {
+    font-family: "rubik", "Gill Sans", Calibri;
     font-size: 1rem;
-    font-family: "Rubik", sans-serif;
+    text-align: justify;
+    width: auto;
+    overflow: hidden;
+    margin: 40px;
+    align-self: center;
     padding-top: 50px;
   }
   .grid-container-eras .grid-item-era .spotify iframe {
@@ -474,16 +499,20 @@ footer {
     width: 100%;
     height: auto;
     margin: 0px;
+    padding: 40px;
+    border-radius: 50px;
     padding: 20px;
     border-radius: 30px;
   }
   .grid-container .grid-item-1 p, .grid-container .grid-item-2 p, .grid-container .grid-item-3 p, .grid-container .grid-item-4 p {
+    font-family: "rubik", "Gill Sans", Calibri;
     font-size: 1rem;
     text-align: justify;
-    font-family: "Rubik", sans-serif;
+    width: auto;
+    overflow: hidden;
+    margin: 40px;
     align-self: center;
     margin: 0px 30px 30px 30px;
-    padding: 0px;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 1303px) {
@@ -502,8 +531,13 @@ footer {
     padding: 20px;
   }
   .grid-container-eras .grid-item-era p {
+    font-family: "rubik", "Gill Sans", Calibri;
     font-size: 1rem;
-    font-family: "Rubik", sans-serif;
+    text-align: justify;
+    width: auto;
+    overflow: hidden;
+    margin: 40px;
+    align-self: center;
     padding-top: 50px;
   }
   .grid-container-eras .grid-item-era .spotify iframe {
