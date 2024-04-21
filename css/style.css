@@ -133,13 +133,6 @@ body {
   margin: 40px;
 }
 
-.spotify iframe {
-  width: auto;
-  height: 400px;
-  background-color: transparent;
-  padding: 20px;
-}
-
 .grid-container-eras {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -182,7 +175,7 @@ body {
   padding: 20px;
 }
 
-#taylorswift:hover {
+#taylorswift:hover, #ttpd:hover, #midnights:hover, #evermore:hover, #folklore:hover, #lover:hover, #reputation:hover, #nineteen:hover, #red:hover, #speaknow:hover, #fearless:hover {
   background-color: rgba(30, 148, 89, 0.527);
   transition: 1s;
   color: whitesmoke;
@@ -190,62 +183,42 @@ body {
 
 #fearless:hover {
   background-color: rgba(129, 107, 9, 0.37);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #speaknow:hover {
   background-color: rgba(100, 23, 100, 0.774);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #red:hover {
   background-color: rgba(87, 4, 4, 0.822);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #nineteen:hover {
   background-color: rgba(23, 99, 134, 0.651);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #reputation:hover {
   background-color: rgba(0, 0, 0, 0.884);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #lover:hover {
   background-color: rgba(168, 30, 122, 0.692);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #folklore:hover {
   background-color: rgba(76, 78, 78, 0.651);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #evermore:hover {
   background-color: rgba(63, 22, 9, 0.733);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #midnights:hover {
   background-color: rgba(8, 22, 104, 0.753);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 #ttpd:hover {
   background-color: rgba(110, 90, 78, 0.733);
-  transition: 1s;
-  color: whitesmoke;
 }
 
 .tour {
@@ -361,6 +334,13 @@ body {
   z-index: 9999;
   transition: 1s;
   box-shadow: 100px 100px 20px rgba(0, 0, 0, 0.8);
+}
+
+.spotify iframe {
+  width: auto;
+  height: 400px;
+  background-color: transparent;
+  padding: 20px;
 }
 
 footer {

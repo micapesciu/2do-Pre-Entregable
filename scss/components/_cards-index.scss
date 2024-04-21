@@ -1,11 +1,3 @@
-// Carrusel
-.eras {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 70px;
-}
-
 // Cards
 // Primer Card - Biografia
 .grid-container {
@@ -50,8 +42,8 @@
     }
 }
 
-// Segunda, tercera y cuarta Card
-.grid-item-2, .grid-item-3, .grid-item-4 {
+// 3 cards del final
+.grid-item-2 {
     background-color: rgba(99, 54, 121, 0.4);
     color: #30354d;
     border-radius: 10px;
@@ -72,5 +64,8 @@
         align-self: center;
         margin: 40px;
     }
-    
+}
+
+.grid-item-3, .grid-item-4{
+    @extend .grid-item-2;
 }
