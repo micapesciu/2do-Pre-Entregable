@@ -1,10 +1,10 @@
 footer {
     display: flex;
     justify-content: center;
-    background-color: whitesmoke;
-    color: #30354d;
+    background-color: $blanco;
+    color: $azul;
     font-family: 'rubik', Arial, Helvetica, sans-serif;
-    border-top: 2px solid #30354d;
+    border-top: 2px solid $azul;
     font-weight: bolder;
     padding-top: 10px;
 }

@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(15, 60px);
     margin: 70px;
-    color: #30354d;
+    color: $azul;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
@@ -17,9 +17,9 @@
         align-items: center;
         grid-column: 1/4;
         padding: 15px;
-        background-color: #30354d;
+        background-color: $azul;
         text-align: justify;
-        color: whitesmoke;
+        color: $blanco;
         border-radius: 15px;
     }
 
@@ -29,15 +29,15 @@
         justify-content: space-between;
         align-items: center;
         grid-column: 1/4;
-        background-color: rgba(99, 54, 121, 0.4);
+        background-color: $violeta;
         border: 1px solid white;
         padding-left: 230px;
         padding-right: 290px;
         border-radius: 20px;
 
         &:hover{
-            background-color:#30354d;
-            color: whitesmoke;
+            background-color: $azul;
+            color: $blanco;
             font-size: 1.7rem;
             transition: 1s;
         }

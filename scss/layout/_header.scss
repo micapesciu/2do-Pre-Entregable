@@ -4,8 +4,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-bottom: 2px solid #30354d;
-    background-color: whitesmoke;
+    border-bottom: 2px solid $azul;
+    background-color: $blanco;
 
     img{
         width: 280px;
@@ -23,13 +23,13 @@ header {
                 padding: 10px;
 
                 a{
-                    color: #30354d;
+                    color: $azul;
                     text-decoration: none;
                     
                     &:hover{
                         text-decoration: none;
                         font-weight: bold;
-                        color: #30354d;
+                        color: $azul;
                         margin: 10px;
                         transition: 1s;
                     }
@@ -40,13 +40,13 @@ header {
 }
 
 .dropdown-menu {
-    background-color:#30354d;
+    background-color: $azul;
 }
 
 .dropdown-item{
-    color:  whitesmoke;
+    color: $blanco;
 }
 
 .dropdown-item:hover {
-    color: #30354d;
+    color: $azul;
 }

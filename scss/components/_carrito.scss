@@ -1,12 +1,12 @@
 .carrito{
     position: fixed;
-    background-color: #30354d;
+    background-color: $azul;
     border-radius: 70px;
     padding: 10px;
     bottom: 10px;
     right: 10px;
 
     &:active{
-        background-color: rgb(53, 28, 65);
+        background-color: $violeta;
     }
 }

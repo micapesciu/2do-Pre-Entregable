@@ -1,3 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("../ProyectoFinal/Rubik/Rubik-VariableFont_wght.ttf");
+}
+body {
+  background-color: #ecd0e2;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -42,19 +55,6 @@ header nav ul li a:hover {
   color: #30354d;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-@font-face {
-  font-family: "rubik";
-  src: url("../ProyectoFinal/Rubik/Rubik-VariableFont_wght.ttf");
-}
-body {
-  background-color: #ecd0e2;
-}
-
 .titulo {
   color: whitesmoke;
   background-color: #30354d;
@@ -96,7 +96,7 @@ body {
 .grid-item-1 p {
   font-size: 1rem;
   text-align: justify;
-  font-family: "Rubik", sans-serif;
+  font-family: "rubik", "Gill Sans", Calibri;
   align-self: center;
   padding: 40px;
   max-height: 400px;
@@ -128,7 +128,7 @@ body {
 }
 .grid-item-2 p, .grid-item-3 p, .grid-item-4 p {
   text-align: justify;
-  font-family: "Rubik", sans-serif;
+  font-family: "rubik", "Gill Sans", Calibri;
   align-self: center;
   margin: 40px;
 }
@@ -293,7 +293,7 @@ body {
 .merch .item:hover {
   color: black;
   font-size: 2rem;
-  background-color: rgba(128, 94, 163, 0.534);
+  background-color: rgba(99, 54, 121, 0.4);
   transition: 1s;
   border-radius: 20px;
 }
@@ -307,7 +307,7 @@ body {
   right: 10px;
 }
 .carrito:active {
-  background-color: rgb(53, 28, 65);
+  background-color: rgba(99, 54, 121, 0.4);
 }
 
 .fotos {
