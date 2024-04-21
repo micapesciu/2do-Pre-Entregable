@@ -1,68 +1,40 @@
 // Cards
-// Primer Card - Biografia
+// Biografia
 .grid-container {
-    display: grid;
+    @include contenedores();
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 70px;
-    margin: 70px;
-    overflow: hidden;
 }
 
 .grid-item-1 {
+    @include estilo-card();
     grid-column: 1/4;
-    background-color: $violeta;
-    color: $azul;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
+    
     p{
-        font-size: 1rem;
-        text-align: justify;
-        font-family: $fuente;
-        align-self: center;
-        padding: 40px;
+        @include texto-parrafo();
         max-height: 400px;
-        width: auto;
-        overflow: hidden; 
     }
 
     img{
-        display: block;  
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 40px;
-        border-radius: 50px;
+        @include imagen-card();
     }
 }
 
 // 3 cards del final
 .grid-item-2 {
-    background-color: $violeta;
-    color: $azul;
-    border-radius: 10px;
-    overflow: hidden;
+    @include estilo-card();
 
     img{
-        display: block;  
-        width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 40px;
-        border-radius: 50px;
+        @include imagen-card();
     }
 
     p{
-        text-align: justify;
-        font-family: $fuente;
-        align-self: center;
-        margin: 40px;
+        @include texto-parrafo();
     }
 }
 

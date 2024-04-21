@@ -56,21 +56,14 @@
             margin-bottom: 25px;
 
             img{
-                display: block;  
-                width: 100%;
-                height: auto; 
-                margin: 0px;
+                @include imagen-card();
                 padding: 20px;
                 border-radius: 30px;
             }
 
             p{
-                font-size: 1rem;
-                text-align: justify;
-                font-family: 'Rubik', sans-serif;
-                align-self: center;
-                margin: 0px 30px 30px 30px;
-                padding: 0px; 
+                @include texto-parrafo();
+                margin-top: 0px;
             }
         }
     }
@@ -92,8 +85,7 @@
             }
 
             p{
-                font-size: 1rem;
-                font-family: 'Rubik', sans-serif;
+                @include texto-parrafo();
                 padding-top: 50px;
             }
 
