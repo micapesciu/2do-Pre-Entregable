@@ -6,15 +6,15 @@
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
-    color: whitesmoke;
+    color: $blanco;
     margin: 70px;
 
     // Cada item de la merch
     .item{
 
         div{
-            background-color: #30354d;
-            color: whitesmoke;
+            background-color: $azul;
+            color: $blanco;
             border-radius: 15px;
             padding: 5px;
             margin: 0px 100px 100px 100px;
@@ -37,7 +37,7 @@
         &:hover{
             color: black;
             font-size: 2rem;
-            background-color: rgba(128, 94, 163, 0.534);
+            background-color: $violeta;
             transition: 1s;
             border-radius: 20px;
         }

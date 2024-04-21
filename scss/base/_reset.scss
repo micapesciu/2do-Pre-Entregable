@@ -1,3 +1,14 @@
+//Variables
+
+// Colores
+$blanco:whitesmoke;
+$azul:#30354d;
+$rosa: #ecd0e2;
+$violeta: rgba(99, 54, 121, 0.4);
+
+// Fuente
+$fuente: 'rubik','Gill Sans', Calibri;
+
 * {
     padding: 0;
     margin: 0;
@@ -9,5 +20,5 @@
 }
 
 body {
-    background-color: #ecd0e2;
+    background-color: $rosa;
 }

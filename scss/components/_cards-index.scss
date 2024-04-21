@@ -13,8 +13,8 @@
 
 .grid-item-1 {
     grid-column: 1/4;
-    background-color: rgba(99, 54, 121, 0.4);
-    color: #30354d;
+    background-color: $violeta;
+    color: $azul;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     p{
         font-size: 1rem;
         text-align: justify;
-        font-family: 'Rubik', sans-serif;
+        font-family: $fuente;
         align-self: center;
         padding: 40px;
         max-height: 400px;
@@ -44,8 +44,8 @@
 
 // 3 cards del final
 .grid-item-2 {
-    background-color: rgba(99, 54, 121, 0.4);
-    color: #30354d;
+    background-color: $violeta;
+    color: $azul;
     border-radius: 10px;
     overflow: hidden;
 
@@ -60,7 +60,7 @@
 
     p{
         text-align: justify;
-        font-family: 'Rubik', sans-serif;
+        font-family: $fuente;
         align-self: center;
         margin: 40px;
     }
