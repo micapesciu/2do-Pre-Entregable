@@ -1,0 +1,45 @@
+// Contenedor de la merch
+.merch {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: whitesmoke;
+    margin: 70px;
+
+    // Cada item de la merch
+    .item{
+
+        div{
+            background-color: #30354d;
+            color: whitesmoke;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 0px 100px 100px 100px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+
+            &:hover{
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                padding: 15px;
+                margin: 0px 100px 100px 100px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover{
+            color: black;
+            font-size: 2rem;
+            background-color: rgba(128, 94, 163, 0.534);
+            transition: 1s;
+            border-radius: 20px;
+        }
+    }
+}

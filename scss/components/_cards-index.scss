@@ -1,0 +1,71 @@
+// Cards
+// Primer Card - Biografia
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 70px;
+    margin: 70px;
+    overflow: hidden;
+}
+
+.grid-item-1 {
+    grid-column: 1/4;
+    background-color: rgba(99, 54, 121, 0.4);
+    color: #30354d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        font-family: 'Rubik', sans-serif;
+        align-self: center;
+        padding: 40px;
+        max-height: 400px;
+        width: auto;
+        overflow: hidden; 
+    }
+
+    img{
+        display: block;  
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+}
+
+// 3 cards del final
+.grid-item-2 {
+    background-color: rgba(99, 54, 121, 0.4);
+    color: #30354d;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img{
+        display: block;  
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+
+    p{
+        text-align: justify;
+        font-family: 'Rubik', sans-serif;
+        align-self: center;
+        margin: 40px;
+    }
+}
+
+.grid-item-3, .grid-item-4{
+    @extend .grid-item-2;
+}

@@ -1,0 +1,139 @@
+// Contenedor de las eras
+.grid-container-eras {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+    grid-row-gap: 30px;
+    margin: 70px;
+}
+
+// Eras por separado
+.grid-container-eras{
+
+    .grid-item-era{
+        background-color: rgba(99, 54, 121, 0.4);
+        color: #30354d;
+        font-size: 1.5rem;
+        font-family: 'Rubik', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .titulo-era{
+            position: absolute;
+            font-size: 1.5rem;
+            align-self: flex-start;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            text-align: justify;
+            margin: 30px;
+            padding-top: 30px;
+            font-family: 'Rubik', sans-serif;
+            width: auto;
+            max-height: 340px;
+            overflow: hidden; 
+        }
+
+        img {
+            width: auto;
+            height: 405px;
+            border-radius: 40px;
+            padding: 20px;
+        }
+    }
+}
+
+// Hovers para cambio de color por era
+#taylorswift{
+
+    &:hover{
+        background-color: rgba(30, 148, 89, 0.527);
+        transition: 1s;
+        color: whitesmoke;
+    }
+}
+
+#fearless{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(129, 107, 9, 0.37);
+    }
+}
+
+#speaknow{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(100, 23, 100, 0.774);
+    }
+}
+
+#red{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(87, 4, 4, 0.822);
+    }
+}
+
+#nineteen{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(23, 99, 134, 0.651);
+    }
+}
+
+#reputation{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(0, 0, 0, 0.884);
+    }
+}
+
+#lover{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(168, 30, 122, 0.692);
+    }
+}
+
+#folklore{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(76, 78, 78, 0.651);
+    }
+}
+
+#evermore{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(63, 22, 9, 0.733);
+    }
+}
+
+#midnights{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(8, 22, 104, 0.753);
+    }
+}
+
+#ttpd{
+
+    &:hover{
+        @extend #taylorswift;
+        background-color: rgba(110, 90, 78, 0.733);
+    }
+}

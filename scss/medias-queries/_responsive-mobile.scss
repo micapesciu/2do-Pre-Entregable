@@ -1,0 +1,110 @@
+@media only screen and (max-width: 425px) {
+
+    // Header para todas las paginas
+    header{
+        flex-direction: column;
+        padding-bottom: 0px;
+
+        img{
+            display: block;  
+            width: 70%;
+            height: auto;
+        }
+
+        nav{
+
+            ul{
+                margin: 0px;
+                padding: 0px;
+
+                li{
+
+                    a{
+                        font-size: 4vw;
+                    }
+                }
+                .nav-item{
+
+                    a{
+                        font-size: 4vw;
+                        padding-top: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        font-size: 0.6rem;
+    }
+
+    // Responsive para index.html
+    // Carrusel
+    .eras{
+        margin: 30px;
+    }
+
+    // Cards
+    .grid-container {
+        display: block; 
+        margin: 30px;
+
+        .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4 {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-bottom: 25px;
+
+            img{
+                display: block;  
+                width: 100%;
+                height: auto; 
+                margin: 0px;
+                padding: 20px;
+                border-radius: 30px;
+            }
+
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                font-family: 'Rubik', sans-serif;
+                align-self: center;
+                margin: 0px 30px 30px 30px;
+                padding: 0px; 
+            }
+        }
+    }
+
+    // Responsive para Eras.html
+    .grid-container-eras{
+        display: block; 
+        margin: 30px;
+
+        .grid-item-era {
+            flex-direction: column; 
+            margin-bottom: 20px;
+
+            img{
+                display: block;  
+                width: 90% ; 
+                height: auto;
+                padding: 20px;
+            }
+
+            p{
+                font-size: 1rem;
+                font-family: 'Rubik', sans-serif;
+                padding-top: 50px;
+            }
+
+            .spotify{
+
+                iframe {
+                display: block; 
+                width: 95%; 
+                margin: auto; 
+                }
+            }
+        }
+    }
+}
