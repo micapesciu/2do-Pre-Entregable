@@ -1,7 +1,7 @@
 // Galeria de fotos
 .fotos {
     @include contenedores();
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 60px;
     column-gap: 10px;
     justify-items: center; 
