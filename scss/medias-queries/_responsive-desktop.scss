@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1025px) {
+// Responsive para fotos.html
+.fotos {
+    img {
+        width: auto; 
+        height: auto; 
+        max-width: 100%; 
+        max-height: 100vh; 
+        border-radius: 15px;
+    }
+}
+}
