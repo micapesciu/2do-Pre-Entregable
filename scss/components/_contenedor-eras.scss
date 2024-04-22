@@ -40,90 +40,84 @@
 
 // Hovers para cambio de color por era
 #taylorswift{
-
     &:hover{
         background-color: rgba(30, 148, 89, 0.527);
         transition: 1s;
         color: $blanco;
+        transform: scale(1) translate(0px, 20px);
+    }
+
+    &:not(:hover){
+        transform: scale(0.9);
     }
 }
 
 #fearless{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(129, 107, 9, 0.37);
+        background-color: rgba(235, 232, 62, 0.37);
     }
 }
 
 #speaknow{
-
-    &:hover{
-        @extend #taylorswift;
-        background-color: rgba(100, 23, 100, 0.774);
+    @extend #taylorswift;
+    &:hover{ 
+        background-color: rgba(155, 15, 155, 0.774);
     }
 }
 
 #red{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(87, 4, 4, 0.822);
+        background-color: rgb(153, 10, 10);
     }
 }
 
 #nineteen{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
         background-color: rgba(23, 99, 134, 0.651);
     }
 }
 
 #reputation{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(0, 0, 0, 0.884);
+        background-color: rgb(0, 0, 0);
     }
 }
 
 #lover{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(168, 30, 122, 0.692);
+        background-color: rgba(252, 9, 102, 0.801);
     }
 }
 
 #folklore{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(76, 78, 78, 0.651);
+        background-color: rgba(49, 47, 47, 0.836);
     }
 }
 
 #evermore{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(63, 22, 9, 0.733);
+        background-color: rgb(61, 18, 5);
     }
 }
 
 #midnights{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
         background-color: rgba(8, 22, 104, 0.753);
     }
 }
 
 #ttpd{
-
+    @extend #taylorswift;
     &:hover{
-        @extend #taylorswift;
-        background-color: rgba(110, 90, 78, 0.733);
+        background-color: rgba(102, 78, 64, 0.959);
     }
 }

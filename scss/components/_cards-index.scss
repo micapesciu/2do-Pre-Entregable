@@ -18,6 +18,12 @@
     p{
         @include texto-parrafo();
         max-height: 400px;
+        text-align: center;
+
+        &:hover{
+            transform: translate(-20px, -20px);
+            transition: 2s;
+        }
     }
 
     img{
@@ -28,6 +34,11 @@
 // 3 cards del final
 .grid-item-2 {
     @include estilo-card();
+
+    &:hover{
+        transform: translate(0px, -30px);
+        transition: 2s;
+    }
 
     img{
         @include imagen-card();
@@ -40,4 +51,26 @@
 
 .grid-item-3, .grid-item-4{
     @extend .grid-item-2;
+}
+
+@keyframes cambiarTamanio{
+
+    0%{
+        transform: scale(0.9);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+.animacion-fondo{
+    animation-name: cambiarTamanio;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 7s;
 }

@@ -2,11 +2,32 @@
     position: fixed;
     background-color: $azul;
     border-radius: 70px;
-    padding: 10px;
+    padding: 20px;
     bottom: 10px;
     right: 10px;
+    background-color: white;
+    transition: 1s;
+}
 
-    &:active{
-        background-color: $violeta;
+@keyframes girarElemento{
+
+    0%{
+        rotate:(20deg);
     }
+
+    50%{
+        rotate:(30deg);
+    }
+
+    100%{
+        rotate:(20deg);
+    }
+}
+
+.girar{
+    animation-name: girarElemento;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }

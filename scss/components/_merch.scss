@@ -29,14 +29,20 @@
         img {
             width: 100%;
             height: auto;
+            transition: transform 0.3s ease;
         }
 
         &:hover{
             color: black;
-            font-size: 1.2rem;
             background-color: $violeta;
             transition: 1s;
             border-radius: 20px;
+            transform: scale(1.05);
         }
     }
+}
+
+// Cursor
+.agotado{
+    cursor: no-drop;
 }

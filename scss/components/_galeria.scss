@@ -25,3 +25,42 @@
         }
     }
 }
+
+// Cursor
+.zoom{
+    cursor: zoom-in;
+}
+
+
+@keyframes cambiarTamanio{
+
+    0%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.tamanio{
+    animation-name: cambiarTamanio;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.tamanio-2{
+    @extend .tamanio;
+    animation-delay: 1.2s;
+}
+
+.tamanio-3{
+    @extend .tamanio;
+    animation-delay: 1.4s;
+}
