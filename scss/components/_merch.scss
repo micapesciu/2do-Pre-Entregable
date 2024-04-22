@@ -1,7 +1,7 @@
 // Contenedor de la merch
 .merch {
     @include contenedores();
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(3,1fr); 
     gap: 10px;
     text-align: center;
     color: $blanco;
@@ -15,7 +15,7 @@
             border-radius: 15px;
             padding: 5px;
             margin: 0px 100px 100px 100px;
-            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.8);
+            
 
             &:hover{
                 background-color: black;

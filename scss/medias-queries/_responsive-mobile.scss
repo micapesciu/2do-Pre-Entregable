@@ -1,5 +1,4 @@
 @media only screen and (max-width: 425px) {
-
     // Header para todas las paginas
     header{
         flex-direction: column;
@@ -12,25 +11,33 @@
         }
 
         nav{
-
             ul{
                 margin: 0px;
                 padding: 0px;
 
                 li{
-
                     a{
                         font-size: 4vw;
                     }
                 }
+                
                 .nav-item{
-
                     a{
                         font-size: 4vw;
                         padding-top: 9px;
                     }
                 }
             }
+        }
+    }
+
+    .titulo{
+        max-width: 100%; 
+        height: auto; 
+        overflow: hidden;
+    
+        h3{
+            font-size: 14px;
         }
     }
 
@@ -90,7 +97,6 @@
             }
 
             .spotify{
-
                 iframe {
                 display: block; 
                 width: 95%; 
@@ -147,6 +153,47 @@
             max-width: 100%; 
             max-height: 100vh; 
             border-radius: 10px;
+        }
+    }
+
+    // Responsive para merch.html
+    .merch {
+        margin: 10px;
+        grid-template-columns: 1fr; 
+        align-items: center; 
+
+        .item {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 15px;
+            overflow: hidden; 
+            margin: 20px;
+
+            img{
+                max-width: 100%;
+                height: auto; 
+                max-height: 100vh;
+            }
+
+            div{
+                margin: 15px;
+                font-size: 12px;
+                box-shadow: none;
+
+                p{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    .carrito{
+        border-radius: 50%; 
+        padding: 10px; 
+
+        img{
+            width: 30px;
+            height: 30px;
         }
     }
 }
