@@ -3,11 +3,12 @@
 
     .grid-container-eras{
         display: block; 
-        margin: 30px;
-
+        margin: 0px;
+        
         .grid-item-era {
             flex-direction: column; 
-            margin-bottom: 20px;
+            margin-bottom: 5px;
+            margin-top: 0px;
 
             img{
                 display: block;  
@@ -22,7 +23,6 @@
             }
 
             .spotify{
-                
                 iframe {
                 position: relative;
                 padding-right: 125px;

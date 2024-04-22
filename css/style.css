@@ -538,12 +538,14 @@ footer {
     margin-top: 0px;
   }
   .grid-container-eras {
-    display: block;
-    margin: 30px;
+    margin: 0px;
+    padding: 0px;
+    grid-row-gap: 0px;
   }
   .grid-container-eras .grid-item-era {
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   .grid-container-eras .grid-item-era img {
     display: block;
@@ -767,11 +769,12 @@ footer {
 @media only screen and (min-width: 426px) and (max-width: 1303px) {
   .grid-container-eras {
     display: block;
-    margin: 30px;
+    margin: 0px;
   }
   .grid-container-eras .grid-item-era {
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 0px;
   }
   .grid-container-eras .grid-item-era img {
     display: block;
