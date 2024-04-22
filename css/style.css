@@ -56,6 +56,17 @@ header nav ul li a:hover {
   transition: 1s;
 }
 
+.nav-item {
+  color: #30354d;
+}
+.nav-item:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #30354d;
+  margin: 10px;
+  transition: 1s;
+}
+
 .dropdown-menu {
   background-color: #30354d;
 }
@@ -456,6 +467,9 @@ footer {
   header {
     flex-direction: column;
     padding-bottom: 0px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
   }
   header img {
     display: block;
@@ -469,9 +483,15 @@ footer {
   header nav ul li a {
     font-size: 4vw;
   }
+  header nav ul .nav-item {
+    display: none;
+  }
   header nav ul .nav-item a {
     font-size: 4vw;
     padding-top: 9px;
+  }
+  header nav ul .mobile {
+    display: block;
   }
   .titulo {
     max-width: 100%;
@@ -639,6 +659,9 @@ footer {
     font-size: 15px;
     padding-top: 9px;
   }
+  header nav ul .mobile {
+    display: none;
+  }
   footer {
     font-size: 0.6rem;
   }
@@ -774,6 +797,9 @@ footer {
   }
 }
 @media only screen and (min-width: 1025px) {
+  .mobile {
+    display: none;
+  }
   .fotos img {
     width: auto;
     height: auto;

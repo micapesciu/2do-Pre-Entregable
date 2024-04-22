@@ -3,6 +3,9 @@
     header{
         flex-direction: column;
         padding-bottom: 0px;
+        max-width: 100%; 
+        height: auto; 
+        overflow: hidden;
 
         img{
             display: block;  
@@ -22,10 +25,15 @@
                 }
                 
                 .nav-item{
+                    display: none;
                     a{
                         font-size: 4vw;
                         padding-top: 9px;
                     }
+                }
+                
+                .mobile {
+                    display: block; // Muestra el enlace solo en dispositivos móviles
                 }
             }
         }

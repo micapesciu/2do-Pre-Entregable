@@ -27,6 +27,10 @@
                         padding-top: 9px;
                     }
                 }
+
+                .mobile {
+                    display: none; // Muestra el enlace solo en dispositivos móviles
+                }
             }
         }
     }

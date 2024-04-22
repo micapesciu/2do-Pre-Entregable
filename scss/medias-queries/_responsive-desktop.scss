@@ -1,4 +1,9 @@
 @media only screen and (min-width: 1025px) {
+// Muestra el desplegable de las eras en el index para desktop
+    .mobile {
+        display: none; // Muestra el enlace solo en dispositivos móviles
+    }
+    
 // Responsive para fotos.html
 .fotos {
     img {
