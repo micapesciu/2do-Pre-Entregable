@@ -18,6 +18,12 @@
     p{
         @include texto-parrafo();
         max-height: 400px;
+        text-align: center;
+
+        &:hover{
+            transform: translate(-20px, -20px);
+            transition: 2s;
+        }
     }
 
     img{
@@ -28,6 +34,11 @@
 // 3 cards del final
 .grid-item-2 {
     @include estilo-card();
+
+    &:hover{
+        transform: translate(0px, -30px);
+        transition: 2s;
+    }
 
     img{
         @include imagen-card();

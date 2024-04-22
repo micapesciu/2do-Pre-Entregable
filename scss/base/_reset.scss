@@ -5,9 +5,39 @@ $blanco:whitesmoke;
 $azul:#30354d;
 $rosa: #ecd0e2;
 $violeta: rgba(99, 54, 121, 0.4);
+$verde:#adcba9;
+$amarillo:#f2bf7d;
+$lila:#c5a6cf;
+$rojo:#72333b;
+$celeste:#abe2f6;
+$negro:#0a0a0a;
+$rosa2:#f7aaca;
+$gris:#ccc9c2;
+$marron:#c0a88c;
+$sepia:#9d988c;
 
 // Fuente
 $fuente: 'rubik','Gill Sans', Calibri;
+
+//Color de fondo rosa
+.gradiente-radial{
+    background: rgb(182,147,184);
+    background: radial-gradient(circle, rgba(182,147,184,1) 47%, rgba(75,139,163,0.35057773109243695) 100%);
+}
+
+.gradiente-lineal{
+    background-image: linear-gradient(to right, rgba(182,147,184,1), rgba(75,139,163,0.35057773109243695));
+}
+
+//Color de fondo azul
+.fondo-azul{
+    background-image: linear-gradient(to right, rgba(48,53,77,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+//Color del background
+.fondo-body{
+    background: radial-gradient(circle, rgba(236,208,226,1) 47%, rgba(191,174,185,1) 100%);
+}
 
 * {
     padding: 0;
@@ -17,8 +47,4 @@ $fuente: 'rubik','Gill Sans', Calibri;
 @font-face {
     font-family: 'rubik';
     src: url('../ProyectoFinal/Rubik/Rubik-VariableFont_wght.ttf');
-}
-
-body {
-    background-color: $rosa;
 }

@@ -1,3 +1,20 @@
+.gradiente-radial {
+  background: rgb(182, 147, 184);
+  background: radial-gradient(circle, rgb(182, 147, 184) 47%, rgba(75, 139, 163, 0.3505777311) 100%);
+}
+
+.gradiente-lineal {
+  background-image: linear-gradient(to right, rgb(182, 147, 184), rgba(75, 139, 163, 0.3505777311));
+}
+
+.fondo-azul {
+  background-image: linear-gradient(to right, rgb(48, 53, 77) 0%, rgb(0, 0, 0) 100%);
+}
+
+.fondo-body {
+  background: radial-gradient(circle, rgb(236, 208, 226) 47%, rgb(191, 174, 185) 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +24,6 @@
   font-family: "rubik";
   src: url("../ProyectoFinal/Rubik/Rubik-VariableFont_wght.ttf");
 }
-body {
-  background-color: #ecd0e2;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -70,6 +83,9 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   margin: 70px;
+  box-shadow: 11px 11px 21px -1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 11px 11px 21px -1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 11px 11px 21px -1px rgba(0, 0, 0, 0.65);
 }
 
 .grid-container {
@@ -104,6 +120,11 @@ header nav ul li a:hover {
   margin: 40px;
   align-self: center;
   max-height: 400px;
+  text-align: center;
+}
+.grid-item-1 p:hover {
+  transform: translate(-20px, -20px);
+  transition: 2s;
 }
 .grid-item-1 img {
   display: block;
@@ -121,6 +142,10 @@ header nav ul li a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.grid-item-2:hover, .grid-item-3:hover, .grid-item-4:hover {
+  transform: translate(0px, -30px);
+  transition: 2s;
+}
 .grid-item-2 img, .grid-item-3 img, .grid-item-4 img {
   display: block;
   width: 100%;
@@ -137,6 +162,24 @@ header nav ul li a:hover {
   overflow: hidden;
   margin: 40px;
   align-self: center;
+}
+
+@keyframes cambiarTamanio {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.animacion-fondo {
+  animation-name: cambiarTamanio;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 7s;
 }
 
 .grid-container-eras {
@@ -189,18 +232,22 @@ header nav ul li a:hover {
   background-color: rgba(30, 148, 89, 0.527);
   transition: 1s;
   color: whitesmoke;
+  transform: scale(1) translate(0px, 20px);
+}
+#taylorswift:not(:hover), #ttpd:not(:hover), #midnights:not(:hover), #evermore:not(:hover), #folklore:not(:hover), #lover:not(:hover), #reputation:not(:hover), #nineteen:not(:hover), #red:not(:hover), #speaknow:not(:hover), #fearless:not(:hover) {
+  transform: scale(0.9);
 }
 
 #fearless:hover {
-  background-color: rgba(129, 107, 9, 0.37);
+  background-color: rgba(235, 232, 62, 0.37);
 }
 
 #speaknow:hover {
-  background-color: rgba(100, 23, 100, 0.774);
+  background-color: rgba(155, 15, 155, 0.774);
 }
 
 #red:hover {
-  background-color: rgba(87, 4, 4, 0.822);
+  background-color: rgb(153, 10, 10);
 }
 
 #nineteen:hover {
@@ -208,19 +255,19 @@ header nav ul li a:hover {
 }
 
 #reputation:hover {
-  background-color: rgba(0, 0, 0, 0.884);
+  background-color: rgb(0, 0, 0);
 }
 
 #lover:hover {
-  background-color: rgba(168, 30, 122, 0.692);
+  background-color: rgba(252, 9, 102, 0.801);
 }
 
 #folklore:hover {
-  background-color: rgba(76, 78, 78, 0.651);
+  background-color: rgba(49, 47, 47, 0.836);
 }
 
 #evermore:hover {
-  background-color: rgba(63, 22, 9, 0.733);
+  background-color: rgb(61, 18, 5);
 }
 
 #midnights:hover {
@@ -228,7 +275,7 @@ header nav ul li a:hover {
 }
 
 #ttpd:hover {
-  background-color: rgba(110, 90, 78, 0.733);
+  background-color: rgba(102, 78, 64, 0.959);
 }
 
 .tour {
@@ -271,6 +318,7 @@ header nav ul li a:hover {
   color: whitesmoke;
   font-size: 1.4rem;
   transition: 1s;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 .merch {
@@ -302,25 +350,48 @@ header nav ul li a:hover {
 .merch .item img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
 }
 .merch .item:hover {
   color: black;
-  font-size: 1.2rem;
   background-color: rgba(99, 54, 121, 0.4);
   transition: 1s;
   border-radius: 20px;
+  transform: scale(1.05);
+}
+
+.agotado {
+  cursor: no-drop;
 }
 
 .carrito {
   position: fixed;
   background-color: #30354d;
   border-radius: 70px;
-  padding: 10px;
+  padding: 20px;
   bottom: 10px;
   right: 10px;
+  background-color: white;
+  transition: 1s;
 }
-.carrito:active {
-  background-color: rgba(99, 54, 121, 0.4);
+
+@keyframes girarElemento {
+  0% {
+    rotate: 20deg;
+  }
+  50% {
+    rotate: 30deg;
+  }
+  100% {
+    rotate: 20deg;
+  }
+}
+.girar {
+  animation-name: girarElemento;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 .fotos {
@@ -350,6 +421,37 @@ header nav ul li a:hover {
   z-index: 9999;
   transition: 1s;
   box-shadow: 100px 100px 20px rgba(0, 0, 0, 0.8);
+}
+
+.zoom {
+  cursor: zoom-in;
+}
+
+@keyframes cambiarTamanio {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.tamanio, .tamanio-3, .tamanio-2 {
+  animation-name: cambiarTamanio;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.tamanio-2 {
+  animation-delay: 1.2s;
+}
+
+.tamanio-3 {
+  animation-delay: 1.4s;
 }
 
 .spotify iframe {

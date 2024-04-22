@@ -13,13 +13,13 @@
 
 <!--El index es responsive-->
 
-<body>
+<body class="fondo-body">
 
     <!--Header-->
     <header>
         <img src="assets/the_eras_tour_logo.png" alt="Logo del Tour">
         <nav>
-            <ul class="fs-3"> 
+            <ul class="fs-3">
                 <li class="nav-item dropdown">
                     <a href="html/eras.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">ERAS</a>
                     <ul class="dropdown-menu ">
@@ -50,9 +50,9 @@
     </header>
 
     <main>
-        <!--Carrusel con Bootstrap-->
+        <!--Autoplaying carousel / componente extraido de bootstrap-->
         <section class="eras">
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a href="html/eras.html">
@@ -116,13 +116,11 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -131,32 +129,33 @@
         </section>
         <!--Grid-->
         <section class="grid-container">
-            <div class="grid-item-1">
+            <div class="grid-item-1 gradiente-radial">
                 <img src="assets/tay.PNG" alt="Taylor Swift">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat mollitia nesciunt neque
-                    quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque quos facilis, sequi dicta
-                    labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat
-                    mollitia nesciunt neque quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque
-                    quos facilis, sequi dicta labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat mollitia nesciunt neque
-                    quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque quos facilis, sequi dicta
-                    labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat
-                    mollitia nesciunt neque quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque
-                    quos facilis, sequi dicta labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat
+                mollitia nesciunt neque
+                quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque quos facilis, sequi dicta
+                labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat
+                mollitia nesciunt neque quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque
+                quos facilis, sequi dicta labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat mollitia nesciunt neque
+                quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque quos facilis, sequi dicta
+                labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat
+                mollitia nesciunt neque quaerat commodi magnam exercitationem placeat dignissimos illo aut eaque
+                quos facilis, sequi dicta labore aliquid ea? Itaque.Lorem ipsum dolor sit amet, consectetur </p>
             </div>
-            <div class="grid-item-2">
+            <div class="grid-item-2 gradiente-radial">
                 <img src="assets/premio 2.PNG" alt="Premio">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eius quibusdam ab ut ratione
                     magnam, ipsam ducimus expedita impedit quisquam repellendus, ipsum labore quasi modi sit sed
                     reiciendis hic dicta!</p>
             </div>
-            <div class="grid-item-3">
+            <div class="grid-item-3 gradiente-radial">
                 <img src="assets/friendshipb.jpg" alt="Friendship Bracelets">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eius quibusdam ab ut ratione
                     magnam, ipsam ducimus expedita impedit quisquam repellendus, ipsum labore quasi modi sit sed
                     reiciendis hic dicta!</p>
             </div>
-            <div class="grid-item-4">
+            <div class="grid-item-4 gradiente-radial">
                 <img src="assets/vip.jpg" alt="Outfit">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eius quibusdam ab ut ratione
                     magnam, ipsam ducimus expedita impedit quisquam repellendus, ipsum labore quasi modi sit sed
@@ -171,5 +170,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
