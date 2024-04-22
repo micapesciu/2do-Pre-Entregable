@@ -164,24 +164,6 @@ header nav ul li a:hover {
   align-self: center;
 }
 
-@keyframes cambiarTamanio {
-  0% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-.animacion-fondo {
-  animation-name: cambiarTamanio;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 7s;
-}
-
 .grid-container-eras {
   display: grid;
   margin: 70px;
@@ -309,8 +291,7 @@ header nav ul li a:hover {
   grid-column: 1/4;
   background-color: rgba(99, 54, 121, 0.4);
   border: 1px solid white;
-  padding-left: 230px;
-  padding-right: 290px;
+  padding: 20px;
   border-radius: 20px;
 }
 .tour .fecha:hover {
@@ -558,6 +539,30 @@ footer {
     width: 95%;
     margin: auto;
   }
+  .tour {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .tour .encabezados h4 {
+    font-size: 13px;
+  }
+  .tour .fecha {
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 10px;
+  }
+  .tour .fecha p {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .tour .fecha img {
+    max-height: 20px;
+    width: auto;
+  }
+  .tour .fecha:hover {
+    font-size: 0.6rem;
+  }
 }
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
   header {
@@ -615,6 +620,29 @@ footer {
     margin: 40px;
     align-self: center;
     margin: 0px 30px 30px 30px;
+  }
+  .tour {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .tour .encabezados h4 {
+    font-size: 13px;
+  }
+  .tour .fecha {
+    padding: 20px;
+    font-size: 13px;
+  }
+  .tour .fecha p {
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .tour .fecha img {
+    max-height: 30px;
+    width: auto;
+  }
+  .tour .fecha:hover {
+    font-size: 0.9rem;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 1303px) {
