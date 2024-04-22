@@ -31,7 +31,7 @@
                         padding-top: 9px;
                     }
                 }
-                
+
                 .mobile {
                     display: block; // Muestra el enlace solo en dispositivos móviles
                 }
@@ -85,12 +85,14 @@
 
     // Responsive para Eras.html
     .grid-container-eras{
-        display: block; 
-        margin: 30px;
+        margin: 0px;
+        padding: 0px;
+        grid-row-gap: 0px;
 
         .grid-item-era {
             flex-direction: column; 
-            margin-bottom: 20px;
+            margin-bottom: 0px;
+            padding: 0px;
 
             img{
                 display: block;  
